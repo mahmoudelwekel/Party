@@ -1,0 +1,11 @@
+1-install the program "FrameWork 4.5.1.exe"
+
+2-install the program "SqlLocalDB_32BIT.msi" Or "SqlLocalDB_64BIT.msi"
+
+3-install the program "setup.exe"
+
+4-Restart your computer
+
+5-open the file "SystemConfigurations.cmd"
+
+6-Enjoy
