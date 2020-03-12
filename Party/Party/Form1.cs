@@ -42,5 +42,18 @@ namespace Party
                 MessageBox.Show(error.ToString());
             }
         }
+
+        private void random_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Random scan = new Random();
+                scan.ShowDialog();
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show(error.ToString());
+            }
+        }
     }
 }

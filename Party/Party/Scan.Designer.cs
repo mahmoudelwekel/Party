@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.BarcodetextBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.barcodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,26 +57,26 @@
             this.panel1.Size = new System.Drawing.Size(464, 50);
             this.panel1.TabIndex = 0;
             // 
+            // BarcodetextBox
+            // 
+            this.BarcodetextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BarcodetextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
+            this.BarcodetextBox.Location = new System.Drawing.Point(160, 10);
+            this.BarcodetextBox.Name = "BarcodetextBox";
+            this.BarcodetextBox.Size = new System.Drawing.Size(294, 30);
+            this.BarcodetextBox.TabIndex = 1;
+            this.BarcodetextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.BarcodetextBox_KeyPress);
+            // 
             // label1
             // 
             this.label1.Dock = System.Windows.Forms.DockStyle.Left;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
             this.label1.Location = new System.Drawing.Point(10, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 30);
+            this.label1.Size = new System.Drawing.Size(150, 30);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Barcode";
+            this.label1.Text = "Barcode [F2]";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // BarcodetextBox
-            // 
-            this.BarcodetextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BarcodetextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
-            this.BarcodetextBox.Location = new System.Drawing.Point(102, 10);
-            this.BarcodetextBox.Name = "BarcodetextBox";
-            this.BarcodetextBox.Size = new System.Drawing.Size(352, 30);
-            this.BarcodetextBox.TabIndex = 1;
-            this.BarcodetextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.BarcodetextBox_KeyPress);
             // 
             // panel3
             // 

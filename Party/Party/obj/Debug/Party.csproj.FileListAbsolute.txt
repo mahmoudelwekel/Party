@@ -1,7 +1,6 @@
 E:\WORK\Desktop Apps\Party\Party\Party\bin\Debug\Party.exe.config
 E:\WORK\Desktop Apps\Party\Party\Party\bin\Debug\Party.exe
 E:\WORK\Desktop Apps\Party\Party\Party\bin\Debug\Party.pdb
-E:\WORK\Desktop Apps\Party\Party\Party\obj\Debug\Party.csprojResolveAssemblyReference.cache
 E:\WORK\Desktop Apps\Party\Party\Party\obj\Debug\Party.Form1.resources
 E:\WORK\Desktop Apps\Party\Party\Party\obj\Debug\Party.Generate.resources
 E:\WORK\Desktop Apps\Party\Party\Party\obj\Debug\Party.Properties.Resources.resources
@@ -9,11 +8,17 @@ E:\WORK\Desktop Apps\Party\Party\Party\obj\Debug\Party.Scan.resources
 E:\WORK\Desktop Apps\Party\Party\Party\obj\Debug\Party.csproj.GenerateResource.Cache
 E:\WORK\Desktop Apps\Party\Party\Party\obj\Debug\Party.exe
 E:\WORK\Desktop Apps\Party\Party\Party\obj\Debug\Party.pdb
-E:\WORK\Desktop Apps\Party\Party\Party\bin\Debug\IronBarCode.dll
-E:\WORK\Desktop Apps\Party\Party\Party\bin\Debug\IronBarCode.xml
 E:\WORK\Desktop Apps\Party\Party\Party\bin\Debug\Party.mdf
 E:\WORK\Desktop Apps\Party\Party\Party\bin\Debug\Party_log.ldf
 E:\WORK\Desktop Apps\Party\Party\Party\bin\Debug\Party.exe.manifest
 E:\WORK\Desktop Apps\Party\Party\Party\bin\Debug\Party.application
 E:\WORK\Desktop Apps\Party\Party\Party\obj\Debug\Party.exe.manifest
 E:\WORK\Desktop Apps\Party\Party\Party\obj\Debug\Party.application
+E:\WORK\Desktop Apps\Party\Party\Party\bin\Debug\zxing.dll
+E:\WORK\Desktop Apps\Party\Party\Party\bin\Debug\zxing.presentation.dll
+E:\WORK\Desktop Apps\Party\Party\Party\bin\Debug\zxing.pdb
+E:\WORK\Desktop Apps\Party\Party\Party\bin\Debug\zxing.xml
+E:\WORK\Desktop Apps\Party\Party\Party\bin\Debug\zxing.presentation.pdb
+E:\WORK\Desktop Apps\Party\Party\Party\bin\Debug\zxing.presentation.xml
+E:\WORK\Desktop Apps\Party\Party\Party\obj\Debug\Party.Random.resources
+E:\WORK\Desktop Apps\Party\Party\Party\obj\Debug\Party.csprojResolveAssemblyReference.cache

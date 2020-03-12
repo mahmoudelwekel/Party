@@ -31,21 +31,24 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.Scan = new System.Windows.Forms.Button();
             this.generate = new System.Windows.Forms.Button();
+            this.random = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.random, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.Scan, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.generate, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(484, 461);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
@@ -54,7 +57,7 @@
             this.Scan.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Scan.AutoSize = true;
             this.Scan.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
-            this.Scan.Location = new System.Drawing.Point(158, 303);
+            this.Scan.Location = new System.Drawing.Point(158, 187);
             this.Scan.Name = "Scan";
             this.Scan.Size = new System.Drawing.Size(168, 85);
             this.Scan.TabIndex = 1;
@@ -67,13 +70,26 @@
             this.generate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.generate.AutoSize = true;
             this.generate.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
-            this.generate.Location = new System.Drawing.Point(158, 72);
+            this.generate.Location = new System.Drawing.Point(158, 34);
             this.generate.Name = "generate";
             this.generate.Size = new System.Drawing.Size(168, 85);
             this.generate.TabIndex = 0;
             this.generate.Text = "Generate";
             this.generate.UseVisualStyleBackColor = true;
             this.generate.Click += new System.EventHandler(this.generate_Click);
+            // 
+            // random
+            // 
+            this.random.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.random.AutoSize = true;
+            this.random.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
+            this.random.Location = new System.Drawing.Point(158, 341);
+            this.random.Name = "random";
+            this.random.Size = new System.Drawing.Size(168, 85);
+            this.random.TabIndex = 2;
+            this.random.Text = "Random";
+            this.random.UseVisualStyleBackColor = true;
+            this.random.Click += new System.EventHandler(this.random_Click);
             // 
             // Form1
             // 
@@ -95,6 +111,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button Scan;
         private System.Windows.Forms.Button generate;
+        private System.Windows.Forms.Button random;
     }
 }
 

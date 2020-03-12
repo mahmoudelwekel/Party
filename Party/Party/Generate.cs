@@ -7,8 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using IronBarCode;
 using System.IO;
+using ZXing;
 
 namespace Party
 {
@@ -33,7 +33,7 @@ namespace Party
             //}
         }
 
-        private static Random random = new Random();
+        private static System.Random random = new System.Random();
         public static string RandomString(int length)
         {
             const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
@@ -144,10 +144,23 @@ namespace Party
                         {
                             string barcode = item[0].ToString();
                             string path = selectedPath + "\\" + barcode + ".png";
-                            GeneratedBarcode MyBarCode = IronBarCode.BarcodeWriter.CreateBarcode(barcode, BarcodeWriterEncoding.Code128).ResizeTo(600, 525).SetMargins(25).ChangeBackgroundColor(Color.Transparent).AddBarcodeValueTextBelowBarcode();
 
-                            MyBarCode.SaveAsPng(path);
+                            //.ResizeTo(600, 525).SetMargins(25).ChangeBackgroundColor(Color.Transparent).AddBarcodeValueTextBelowBarcode()
+                            BarcodeWriter br = new BarcodeWriter();
+                            br.Format = BarcodeFormat.CODE_128;
+                            br.Options.Margin = 20;
+                            br.Options.Height = 450;
+                            br.Options.Width = 750;
 
+                            ZXing.Rendering.BitmapRenderer rend = new ZXing.Rendering.BitmapRenderer();
+                            rend.Background = Color.Transparent;
+                            
+                            rend.TextFont = new Font("arial", 55);
+
+                            br.Renderer = rend;
+                            
+                            br.Write(barcode).Save(path, System.Drawing.Imaging.ImageFormat.Png);
+                          
                             swExtLogFile.WriteLine(barcode);
 
                             progressBar1.Value = System.IO.Directory.GetFiles(selectedPath).Length;
